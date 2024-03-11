@@ -212,12 +212,13 @@ class _MaterialControlsState extends State<MaterialControls>
                     padding: const EdgeInsets.all(12.0),
                     child: IconButton(
                         icon: isFinished
-                            ? const Icon(Icons.replay, size: 32.0, color: Colors.red)
+                            ? const Icon(Icons.replay,
+                                size: 32.0, color: Colors.red)
                             : AnimatedIcon(
                                 icon: AnimatedIcons.play_pause,
                                 progress: playPauseIconAnimationController,
-                                size: 32.0, , color: Colors.red
-                              ),
+                                size: 32.0,
+                                color: Colors.red),
                         onPressed: () {
                           _playPause();
                         }),
