@@ -138,7 +138,7 @@ class _MaterialControlsState extends State<MaterialControls>
             if (chewieController.allowPlaybackSpeedChanging)
               _buildSpeedButton(controller),
             if (chewieController.allowMuting) _buildMuteButton(controller),
-            if (chewieController.allowFullScreen) _buildExpandButton(),
+            //if (chewieController.allowFullScreen) _buildExpandButton(),
           ],
         ),
       ),
