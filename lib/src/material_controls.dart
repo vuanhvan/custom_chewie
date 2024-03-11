@@ -67,7 +67,8 @@ class _MaterialControlsState extends State<MaterialControls>
                   _latestValue.isBuffering)
                 const Expanded(
                   child: Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.red)),
                   ),
                 )
               else
@@ -211,11 +212,11 @@ class _MaterialControlsState extends State<MaterialControls>
                     padding: const EdgeInsets.all(12.0),
                     child: IconButton(
                         icon: isFinished
-                            ? const Icon(Icons.replay, size: 32.0)
+                            ? const Icon(Icons.replay, size: 32.0, color: Colors.red)
                             : AnimatedIcon(
                                 icon: AnimatedIcons.play_pause,
                                 progress: playPauseIconAnimationController,
-                                size: 32.0,
+                                size: 32.0, , color: Colors.red
                               ),
                         onPressed: () {
                           _playPause();
@@ -297,10 +298,10 @@ class _MaterialControlsState extends State<MaterialControls>
               right: 8.0,
             ),
             child: Icon(
-              (_latestValue != null && _latestValue.volume > 0)
-                  ? Icons.volume_up
-                  : Icons.volume_off,
-            ),
+                (_latestValue != null && _latestValue.volume > 0)
+                    ? Icons.volume_up
+                    : Icons.volume_off,
+                color: Colors.red),
           ),
         ),
       ),
@@ -318,9 +319,8 @@ class _MaterialControlsState extends State<MaterialControls>
           left: 12.0,
           right: 12.0,
         ),
-        child: Icon(
-          controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
-        ),
+        child: Icon(controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
+            color: Colors.red),
       ),
     );
   }
