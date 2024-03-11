@@ -160,7 +160,7 @@ class _CupertinoControlsState extends State<CupertinoControls>
                         _buildSkipBack(iconColor, barHeight),
                         _buildPlayPause(controller, iconColor, barHeight),
                         _buildSkipForward(iconColor, barHeight),
-                        _buildPosition(iconColor),
+                        //_buildPosition(iconColor),
                         _buildProgressBar(),
                         _buildRemaining(iconColor),
                         if (chewieController.allowPlaybackSpeedChanging)

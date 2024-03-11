@@ -127,10 +127,10 @@ class _MaterialControlsState extends State<MaterialControls>
         child: Row(
           children: <Widget>[
             _buildPlayPause(controller),
-            if (chewieController.isLive)
-              const Expanded(child: Text('LIVE'))
-            else
-              _buildPosition(iconColor),
+            // if (chewieController.isLive)
+            //   const Expanded(child: Text('LIVE'))
+            // else
+            //   _buildPosition(iconColor),
             if (chewieController.isLive)
               const SizedBox()
             else
