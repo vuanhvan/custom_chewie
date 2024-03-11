@@ -62,7 +62,7 @@ class _CupertinoControlsState extends State<CupertinoControls>
     }
 
     final backgroundColor = widget.backgroundColor;
-    final iconColor = widget.iconColor;
+    final iconColor = Colors.red; //widget.iconColor;
     chewieController = ChewieController.of(context);
     controller = chewieController.videoPlayerController;
     final orientation = MediaQuery.of(context).orientation;

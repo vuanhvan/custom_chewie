@@ -116,7 +116,7 @@ class _MaterialControlsState extends State<MaterialControls>
   AnimatedOpacity _buildBottomBar(
     BuildContext context,
   ) {
-    final iconColor = Theme.of(context).textTheme.button.color;
+    final iconColor = Colors.red; //Theme.of(context).textTheme.button.color;
 
     return AnimatedOpacity(
       opacity: _hideStuff ? 0.0 : 1.0,
