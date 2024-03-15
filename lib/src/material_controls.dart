@@ -124,7 +124,7 @@ class _MaterialControlsState extends State<MaterialControls>
       duration: const Duration(milliseconds: 300),
       child: Container(
         height: barHeight,
-        color: Theme.of(context).dialogBackgroundColor,
+        color: Colors.transparent, //Theme.of(context).dialogBackgroundColor,
         child: Row(
           children: <Widget>[
             _buildPlayPause(controller),
