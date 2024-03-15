@@ -209,7 +209,7 @@ class _MaterialControlsState extends State<MaterialControls>
                     borderRadius: BorderRadius.circular(48.0),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.all(12.0),
+                    padding: const EdgeInsets.all(6.0),
                     child: IconButton(
                         icon: isFinished
                             ? const Icon(Icons.replay,
